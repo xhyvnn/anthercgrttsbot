@@ -21,7 +21,7 @@ API_ID = int(getenv("API_ID", "13313508"))
 API_HASH = getenv("API_HASH", "1eb61b7ec86345c9e3bbc0fae2e467b3")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5673815637:AAEgZ-OtGpbpxo0rj8SapkAr-SfZ3vheDOk")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001768487197"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "anothercgrttsbot")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "2017645751").split())
 )  # Input type must be interger
 
 # JANGAN HAPUS YA KONTOL
@@ -67,7 +67,7 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
@@ -78,7 +78,7 @@ SUPPORT_GROUP = getenv(
 )  # Example:- https://t.me/damprivateroom 
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -141,7 +141,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC4Lz0Yn8O53Grsv0FQ9xfGe5PFzsR40Uj1XLODySDXPMF1gRKqCbm-SA8v3fsWezqvLcoOl0GY_fJhP-FFtQECKj6zLRln8aCVHoCn7Lz8hGC5ijl_Ngqhd8jOlnyEdyVjjqlD6iAlA7nxDxI43PMcF-HT8-TT-YLTh50Y7uhdNYn9Q6lReZzTX2BjpWXOyauPXajdfujeqezCJ7r2Zknlq7pMiep_0UI8aU-nATRsw2s72FyEYW-Js4cJf5pxv4FHN9ubSzORLCHzYXxGEZNrO-w_RYJBKPvSJ88KxG6zYhCY1gMfVJDO77y0Uct5TtrAABz756NvCSTQQFaUn1SsAAAAAU6mpKEA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
